@@ -14,10 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+          primarySwatch: Colors.blue,
+          textTheme: const TextTheme(
+            bodyText2: TextStyle(fontSize: 64, fontWeight: FontWeight.bold),
+          )),
+      home: const MyHomePage(title: 'FutureBuilder'),
     );
   }
 }
